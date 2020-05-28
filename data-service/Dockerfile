@@ -1,3 +1,3 @@
 FROM sourcepole/qwc-data-service
 
-ADD dataConfig.json /srv/qwc_service
+ADD agdiConfig.json /srv/qwc_service
