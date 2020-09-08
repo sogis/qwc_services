@@ -5,3 +5,4 @@ RUN mkdir /data \
     && chmod 0775 /data
 
 ADD somap.qgs somap_print.qgs somap_wfs.qgs grundbuchplanauszug.qgs /data/
+RUN chown www-data somap* grundbuchplanauszug.qgs
