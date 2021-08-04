@@ -5,98 +5,98 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="baulinie20180920075831296" source="service='sogis_pub' key='t_id' srid=2056 type=LineString table=&quot;agi_baulinien_pub&quot;.&quot;baulinie&quot; (geometrie) sql=" name="baulinie">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="baulinie20180920075831296" source="service='sogis_webmapping' key='t_id' srid=2056 type=LineString table=&quot;agi_baulinien_pub&quot;.&quot;baulinie&quot; (geometrie) sql=" name="baulinie">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_fixpunkt_geometrie20180607113953331" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_fixpunkt&quot; (geometrie) sql=" name="mopublic_fixpunkt.geometrie">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_fixpunkt_geometrie20180607113953331" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_fixpunkt&quot; (geometrie) sql=" name="mopublic_fixpunkt.geometrie">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_hoheitsgrenzpunkt_geometrie20180607114508855" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_hoheitsgrenzpunkt&quot; (geometrie) sql=" name="mopublic_hoheitsgrenzpunkt.geometrie">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_hoheitsgrenzpunkt_geometrie20180607114508855" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_hoheitsgrenzpunkt&quot; (geometrie) sql=" name="mopublic_hoheitsgrenzpunkt.geometrie">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_grenzpunkt20180607115658201" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_grenzpunkt&quot; (geometrie) sql=" name="grundbuchplan_grenzpunkt">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_grenzpunkt20180607115658201" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_grenzpunkt&quot; (geometrie) sql=" name="grundbuchplan_grenzpunkt">
       <customproperties>
         <property key="expandedLegendNodes" value="{68fb69e6-2286-4701-953d-bede058d94a4}"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_gemeindegrenze_proj20180607115924888" source="service='sogis_pub' key='t_id' srid=2056 type=LineString table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_gemeindegrenze_proj&quot; (geometrie) sql=" name="mopublic_gemeindegrenze_proj">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_gemeindegrenze_proj20180607115924888" source="service='sogis_webmapping' key='t_id' srid=2056 type=LineString table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_gemeindegrenze_proj&quot; (geometrie) sql=" name="mopublic_gemeindegrenze_proj">
       <customproperties>
         <property key="expandedLegendNodes"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_gemeindegrenze20180607120010839" source="service='sogis_pub' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_gemeindegrenze&quot; (geometrie) sql=" name="mopublic_gemeindegrenze">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_gemeindegrenze20180607120010839" source="service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_gemeindegrenze&quot; (geometrie) sql=" name="mopublic_gemeindegrenze">
       <customproperties>
         <property key="expandedLegendNodes"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_grundstueckpos_pos20180607130318057" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_grundstueckpos&quot; (pos) sql=" name="grundbuchplan_grundstueckpos.pos">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_grundstueckpos_pos20180607130318057" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_grundstueckpos&quot; (pos) sql=" name="grundbuchplan_grundstueckpos.pos">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_grundstueck_proj_pos20180607130512240" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grundstueck_proj&quot; (pos) sql=" name="mopublic_grundstueck_proj.pos">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_grundstueck_proj_pos20180607130512240" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grundstueck_proj&quot; (pos) sql=" name="mopublic_grundstueck_proj.pos">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_grundstueckpos_hilfslinie20180607130720079" source="service='sogis_pub' key='t_id' srid=2056 type=LineString table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_grundstueckpos&quot; (hilfslinie) sql=" name="grundbuchplan_grundstueckpos.hilfslinie">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_grundstueckpos_hilfslinie20180607130720079" source="service='sogis_webmapping' key='t_id' srid=2056 type=LineString table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_grundstueckpos&quot; (hilfslinie) sql=" name="grundbuchplan_grundstueckpos.hilfslinie">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_liegenschaft20180607130901430" source="service='sogis_pub' key='t_id' srid=2056 type=Polygon table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_liegenschaft&quot; (geometrie) sql=" name="grundbuchplan_liegenschaft">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_liegenschaft20180607130901430" source="service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_liegenschaft&quot; (geometrie) sql=" name="grundbuchplan_liegenschaft">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_grundstueck_proj_geometrie20180607131013238" source="service='sogis_pub' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grundstueck_proj&quot; (geometrie) sql=" name="mopublic_grundstueck_proj.geometrie_liegenschaft">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_grundstueck_proj_geometrie20180607131013238" source="service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grundstueck_proj&quot; (geometrie) sql=" name="mopublic_grundstueck_proj.geometrie_liegenschaft">
       <customproperties>
         <property key="expandedLegendNodes" value="{bd6ac8b0-4932-4cf1-a75a-1ac3a074d206}"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_grundstueck_geometrie20180607131153620" source="service='sogis_pub' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grundstueck&quot; (geometrie) sql=" name="mopublic_grundstueck.geometrie">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_grundstueck_geometrie20180607131153620" source="service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grundstueck&quot; (geometrie) sql=" name="mopublic_grundstueck.geometrie">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_grundstueck_proj_geometrie20180607131412812" source="service='sogis_pub' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grundstueck_proj&quot; (geometrie) sql=" name="mopublic_grundstueck_proj.geometrie">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_grundstueck_proj_geometrie20180607131412812" source="service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_grundstueck_proj&quot; (geometrie) sql=" name="mopublic_grundstueck_proj.geometrie">
       <customproperties>
         <property key="expandedLegendNodes" value="{a1533417-028d-4981-8c99-5f64b5eebef6}"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_ortsname_pos20180607131531546" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_ortsname&quot; (pos) sql=" name="mopublic_ortsname.pos">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_ortsname_pos20180607131531546" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_ortsname&quot; (pos) sql=" name="mopublic_ortsname.pos">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_gelaendename20180607131743110" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_gelaendename&quot; (pos) sql=" name="mopublic_gelaendename">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_gelaendename20180607131743110" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_gelaendename&quot; (pos) sql=" name="mopublic_gelaendename">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_flurname_pos20180607132017063" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_flurname&quot; (pos) sql=" name="mopublic_flurname.pos">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_flurname_pos20180607132017063" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_flurname&quot; (pos) sql=" name="mopublic_flurname.pos">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_gebaeudeadresse_pos20180607135655605" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_gebaeudeadresse&quot; (pos) sql=" name="mopublic_gebaeudeadresse.pos">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_gebaeudeadresse_pos20180607135655605" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_gebaeudeadresse&quot; (pos) sql=" name="mopublic_gebaeudeadresse.pos">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_strassenname_pos20180607135836430" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_strassenname_pos&quot; (pos) sql=" name="mopublic_strassenname_pos">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_strassenname_pos20180607135836430" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_strassenname_pos&quot; (pos) sql=" name="mopublic_strassenname_pos">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_rohrleitung20180607135935497" source="service='sogis_pub' key='t_id' srid=2056 type=LineString table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_rohrleitung&quot; (geometrie) sql=" name="mopublic_rohrleitung">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_rohrleitung20180607135935497" source="service='sogis_webmapping' key='t_id' srid=2056 type=LineString table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_rohrleitung&quot; (geometrie) sql=" name="mopublic_rohrleitung">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_einzelobjekt_punkt20180607140102983" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_einzelobjekt_punkt&quot; (geometrie) sql=" name="mopublic_einzelobjekt_punkt">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_einzelobjekt_punkt20180607140102983" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_einzelobjekt_punkt&quot; (geometrie) sql=" name="mopublic_einzelobjekt_punkt">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_einzelobjekt_linie20180607140205358" source="service='sogis_pub' key='t_id' srid=2056 type=LineString table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_einzelobjekt_linie&quot; (geometrie) sql=" name="mopublic_einzelobjekt_linie">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_einzelobjekt_linie20180607140205358" source="service='sogis_webmapping' key='t_id' srid=2056 type=LineString table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_einzelobjekt_linie&quot; (geometrie) sql=" name="mopublic_einzelobjekt_linie">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_einzelobjekt_flaeche20180607140235918" source="service='sogis_pub' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_einzelobjekt_flaeche&quot; (geometrie) sql=" name="mopublic_einzelobjekt_flaeche">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_einzelobjekt_flaeche20180607140235918" source="service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_einzelobjekt_flaeche&quot; (geometrie) sql=" name="mopublic_einzelobjekt_flaeche">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_bodenbedeckung_proj20180607140309870" source="service='sogis_pub' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_bodenbedeckung_proj&quot; (geometrie) sql=" name="mopublic_bodenbedeckung_proj">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="mopublic_bodenbedeckung_proj20180607140309870" source="service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_bodenbedeckung_proj&quot; (geometrie) sql=" name="mopublic_bodenbedeckung_proj">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_bodenbedeckungsymbol20180607140351725" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_bodenbedeckungsymbol&quot; (pos) sql=" name="grundbuchplan_bodenbedeckungsymbol">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="grundbuchplan_bodenbedeckungsymbol20180607140351725" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_grundbuchplan_pub&quot;.&quot;grundbuchplan_bodenbedeckungsymbol&quot; (pos) sql=" name="grundbuchplan_bodenbedeckungsymbol">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_ortsname_pos20180607140558604" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_ortsname&quot; (pos) sql=" name="mopublic_ortsname.pos">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_ortsname_pos20180607140558604" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_ortsname&quot; (pos) sql=" name="mopublic_ortsname.pos">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_objektname_pos20200424112349281" source="service='sogis_pub' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_objektname_pos&quot; (pos) sql=" name="mopublic_objektname_pos">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_objektname_pos20200424112349281" source="service='sogis_webmapping' key='t_id' srid=2056 type=Point table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_objektname_pos&quot; (pos) sql=" name="mopublic_objektname_pos">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_bodenbedeckung20180607140622836" source="service='sogis_pub' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_bodenbedeckung&quot; (geometrie) sql=" name="mopublic_bodenbedeckung">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_bodenbedeckung20180607140622836" source="service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_bodenbedeckung&quot; (geometrie) sql=" name="mopublic_bodenbedeckung">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_einzelobjekt_flaeche20180607140714531" source="service='sogis_pub' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_einzelobjekt_flaeche&quot; (geometrie) sql=" name="mopublic_einzelobjekt_flaeche_unterirdisch">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="mopublic_einzelobjekt_flaeche20180607140714531" source="service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table=&quot;agi_mopublic_pub&quot;.&quot;mopublic_einzelobjekt_flaeche&quot; (geometrie) sql=" name="mopublic_einzelobjekt_flaeche_unterirdisch">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -1630,7 +1630,7 @@
         <ymax>1230836.25</ymax>
       </extent>
       <id>baulinie20180920075831296</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=LineString table="agi_baulinien_pub"."baulinie" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=LineString table="agi_baulinien_pub"."baulinie" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2025,7 +2025,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>grundbuchplan_bodenbedeckungsymbol20180607140351725</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_grundbuchplan_pub"."grundbuchplan_bodenbedeckungsymbol" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_grundbuchplan_pub"."grundbuchplan_bodenbedeckungsymbol" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2737,7 +2737,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="3000" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>grundbuchplan_grenzpunkt20180607115658201</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_grundbuchplan_pub"."grundbuchplan_grenzpunkt" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_grundbuchplan_pub"."grundbuchplan_grenzpunkt" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -4296,7 +4296,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="5000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>grundbuchplan_grundstueckpos_hilfslinie20180607130720079</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=LineString table="agi_grundbuchplan_pub"."grundbuchplan_grundstueckpos" (hilfslinie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=LineString table="agi_grundbuchplan_pub"."grundbuchplan_grundstueckpos" (hilfslinie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -4801,7 +4801,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>grundbuchplan_grundstueckpos_pos20180607130318057</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_grundbuchplan_pub"."grundbuchplan_grundstueckpos" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_grundbuchplan_pub"."grundbuchplan_grundstueckpos" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -5313,7 +5313,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>grundbuchplan_liegenschaft20180607130901430</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Polygon table="agi_grundbuchplan_pub"."grundbuchplan_liegenschaft" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table="agi_grundbuchplan_pub"."grundbuchplan_liegenschaft" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -5764,7 +5764,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="20000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_bodenbedeckung20180607140622836</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_bodenbedeckung" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_bodenbedeckung" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -7928,7 +7928,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_bodenbedeckung_proj20180607140309870</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_bodenbedeckung_proj" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_bodenbedeckung_proj" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -8359,7 +8359,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_einzelobjekt_flaeche20180607140235918</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_einzelobjekt_flaeche" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_einzelobjekt_flaeche" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -9183,7 +9183,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="5000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_einzelobjekt_flaeche20180607140714531</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_einzelobjekt_flaeche" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_einzelobjekt_flaeche" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -9530,7 +9530,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="1" maximumScale="5000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_einzelobjekt_linie20180607140205358</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=LineString table="agi_mopublic_pub"."mopublic_einzelobjekt_linie" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=LineString table="agi_mopublic_pub"."mopublic_einzelobjekt_linie" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -10447,7 +10447,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_einzelobjekt_punkt20180607140102983</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_einzelobjekt_punkt" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_einzelobjekt_punkt" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -11579,7 +11579,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1261568</ymax>
       </extent>
       <id>mopublic_fixpunkt_geometrie20180607113953331</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_fixpunkt" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_fixpunkt" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -13172,7 +13172,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_flurname_pos20180607132017063</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_flurname" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_flurname" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -13447,7 +13447,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_gebaeudeadresse_pos20180607135655605</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_gebaeudeadresse" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_gebaeudeadresse" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -13782,7 +13782,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1259169.375</ymax>
       </extent>
       <id>mopublic_gelaendename20180607131743110</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_gelaendename" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_gelaendename" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -14196,7 +14196,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+06" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_gemeindegrenze20180607120010839</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_gemeindegrenze" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_gemeindegrenze" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -14739,7 +14739,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_gemeindegrenze_proj20180607115924888</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=LineString table="agi_mopublic_pub"."mopublic_gemeindegrenze_proj" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=LineString table="agi_mopublic_pub"."mopublic_gemeindegrenze_proj" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -15257,7 +15257,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_grundstueck_geometrie20180607131153620</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_grundstueck" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_grundstueck" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -15817,7 +15817,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_grundstueck_proj_geometrie20180607131013238</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_grundstueck_proj" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_grundstueck_proj" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -16292,7 +16292,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_grundstueck_proj_geometrie20180607131412812</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_grundstueck_proj" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Polygon table="agi_mopublic_pub"."mopublic_grundstueck_proj" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -16852,7 +16852,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_grundstueck_proj_pos20180607130512240</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_grundstueck_proj" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_grundstueck_proj" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -17177,7 +17177,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="3000" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_hoheitsgrenzpunkt_geometrie20180607114508855</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_hoheitsgrenzpunkt" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_hoheitsgrenzpunkt" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -18152,7 +18152,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_objektname_pos20200424112349281</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_objektname_pos" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_objektname_pos" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -18458,7 +18458,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "objektname", '&lt;NULL>' )</previewExpression>
     </maplayer>    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_ortsname_pos20180607131531546</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_ortsname" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_ortsname" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -18723,7 +18723,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_ortsname_pos20180607140558604</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_ortsname" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_ortsname" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -19018,7 +19018,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="6000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_rohrleitung20180607135935497</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=LineString table="agi_mopublic_pub"."mopublic_rohrleitung" (geometrie) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=LineString table="agi_mopublic_pub"."mopublic_rohrleitung" (geometrie) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -19451,7 +19451,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>mopublic_strassenname_pos20180607135836430</id>
-      <datasource>service='sogis_pub' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_strassenname_pos" (pos) sql=</datasource>
+      <datasource>service='sogis_webmapping' key='t_id' srid=2056 type=Point table="agi_mopublic_pub"."mopublic_strassenname_pos" (pos) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
