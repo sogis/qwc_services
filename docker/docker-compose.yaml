@@ -26,7 +26,7 @@ services:
      - recover_edit:/recover
      - backrestrepo_edit:/backrestrepo
     hostname: primary-edit
-    healtcheck:
+    healthcheck:
       test: ["CMD", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
       interval: 30s
       timeout: 5s
@@ -57,7 +57,7 @@ services:
      - recover_pub:/recover
      - backrestrepo_pub:/backrestrepo
     hostname: primary-pub
-    healtcheck:
+    healthcheck:
       test: ["CMD", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
       interval: 30s
       timeout: 5s
@@ -88,7 +88,7 @@ services:
      - recover_oereb:/recover
      - backrestrepo_oereb:/backrestrepo
     hostname: primary-oereb
-    healtcheck:
+    healthcheck:
       test: ["CMD", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
       interval: 30s
       timeout: 5s
