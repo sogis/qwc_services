@@ -2,9 +2,7 @@ version: '3'
 services:
   edit-db:
     container_name: sogis-postgis-edit
-    image: sogis/postgis-db:localbuild
-    build:
-      context: ./postgis
+    image: crunchydata/crunchy-postgres-gis:centos8-13.3-3.1-4.7.1
     environment:
       MODE: postgres
       PG_DATABASE: edit
@@ -27,12 +25,16 @@ services:
      - pgwal_edit:/pgwal
      - recover_edit:/recover
      - backrestrepo_edit:/backrestrepo
-
+    hostname: primary-edit
+    healtcheck:
+      test: ["CMD", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 5
   pub-db:
     container_name: sogis-postgis-pub
-    image: sogis/postgis-db:localbuild
-    build:
-      context: ./postgis
+    image: crunchydata/crunchy-postgres-gis:centos8-13.3-3.1-4.7.1
     environment:
       MODE: postgres
       PG_DATABASE: pub
@@ -54,12 +56,16 @@ services:
      - pgwal_pub:/pgwal
      - recover_pub:/recover
      - backrestrepo_pub:/backrestrepo
-
+    hostname: primary-pub
+    healtcheck:
+      test: ["CMD", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 5
   oereb-db:
     container_name: sogis-postgis-oereb
-    image: sogis/postgis-db:localbuild
-    build:
-      context: ./postgis
+    image: crunchydata/crunchy-postgres-gis:centos8-13.3-3.1-4.7.1
     environment:
       MODE: postgres
       PG_DATABASE: oereb
@@ -81,7 +87,13 @@ services:
      - pgwal_oereb:/pgwal
      - recover_oereb:/recover
      - backrestrepo_oereb:/backrestrepo
-
+    hostname: primary-oereb
+    healtcheck:
+      test: ["CMD", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 5
   qgis-server:
     container_name: sogis-qgis-server
     image: sogis/qgis-server
