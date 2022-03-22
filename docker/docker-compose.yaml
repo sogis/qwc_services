@@ -27,7 +27,7 @@ services:
      - backrestrepo_edit:/backrestrepo
     hostname: primary-edit
     healthcheck:
-      test: ["CMD", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
+      test: ["CMD-SHELL", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
       interval: 30s
       timeout: 5s
       start_period: 60s
@@ -58,7 +58,7 @@ services:
      - backrestrepo_pub:/backrestrepo
     hostname: primary-pub
     healthcheck:
-      test: ["CMD", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
+      test: ["CMD-SHELL", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
       interval: 30s
       timeout: 5s
       start_period: 60s
@@ -89,7 +89,7 @@ services:
      - backrestrepo_oereb:/backrestrepo
     hostname: primary-oereb
     healthcheck:
-      test: ["CMD", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
+      test: ["CMD-SHELL", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
       interval: 30s
       timeout: 5s
       start_period: 60s
