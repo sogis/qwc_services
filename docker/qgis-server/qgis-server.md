@@ -17,11 +17,48 @@ docker-compose prune
 ```
 Dabei werden alle Docker Volumes, die an einen Container angebunden sind, unwiderruflich gelöscht.
 
-Die DBs sind mit folgenden Verbindungsparametern erreichbar:
+Die DBs sind von der lokalen Maschine mit folgenden Verbindungsparametern erreichbar:
 
 **Edit-DB**
 
 * Hostname: `localhost`
 * Port: `54321`
 * DB-Name: `edit`
-* Benutzer: `gretl` (für Lese- und Schreibzugriff), `ogc-server` (Zugriff von QGIS Server' oder `admin` (zum Anlegen von Schemen, Tabellen usw.); das Passwort lautet jeweils gleich wie der Benutzername.
+* Benutzer: `gretl` (für Lese- und Schreibzugriff), `ogc-server` (Zugriff von QGIS Server) oder `admin` (zum Anlegen von Schemen, Tabellen usw.); das Passwort lautet jeweils gleich wie der Benutzername.
+
+**Publikations-DB**
+
+* Hostname: `localhost`
+* Port: `54322`
+* DB-Name: `pub`
+* Benutzer: `gretl` (für Lese- und Schreibzugriff), `ogc_server` (Zugriff von QGIS Server) oder `admin` (zum Anlegen von Schemen, Tabellen usw.); das Passwort lautet jeweils gleich wie der Benutzername.
+
+**Oereb-DB**
+
+* Hostname: `localhost`
+* Port: `54323`
+* DB-Name: `oereb`
+* Benutzer: `gretl` (für Lese- und Schreibzugriff), `ogc_server` (Zugriff von QGIS Server) oder `admin` (zum Anlegen von Schemen, Tabellen usw.); das Passwort lautet jeweils gleich wie der Benutzername.
+
+### Die Rollen (Benutzer und Gruppen) der produktiven DBs importieren
+
+Um auch die in den produktiven DBs vorhandenen DB-Rollen in den Entwicklungs-DBs verfügbar zu haben, kopiert man die Datei mit den DB-Rollen (die "Globals") vom geoutil-Server auf seine lokale Maschine, entfernt mit einem `sed`-Befehl diejenigen Zeilen, die Rollen enthalten, die in den Entwicklungs-DBs bereits automatisch angelegt werden, und importiert die globals dann mit `psql` in die Entwicklungs-DBs:
+
+```
+scp geoutil.verw.rootso.org:/opt/workspace/dbdump/globals_geodb.rootso.org.dmp /tmp
+sed -E -i.bak '/^CREATE ROLE (postgres|admin|gretl|ogc_server)\;/d; /^ALTER ROLE (postgres|admin|gretl|ogc_server) /d' /tmp/globals_geodb.rootso.org.dmp
+psql --single-transaction -h localhost -p 54321 -d edit -U postgres -f /tmp/globals_geodb.rootso.org.dmp
+psql --single-transaction -h localhost -p 54322 -d pub -U postgres -f /tmp/globals_geodb.rootso.org.dmp
+psql --single-transaction -h localhost -p 54323 -d oereb -U postgres -f /tmp/globals_geodb.rootso.org.dmp
+```
+
+Für den Fall, dass `psql` auf der lokalen Maschine nicht installiert ist, kopiert man stattdessen die Globals zuerst in den laufenden Container und führt danach den `psql`-Befehl innerhalb des Containers aus:
+
+```
+docker cp /tmp/globals_geodb.rootso.org.dmp sogis-postgis-pub:/tmp
+docker exec -e PGHOST=/tmp -it sogis-postgis-pub psql --single-transaction -d pub -f /tmp/globals_geodb.rootso.org.dmp
+docker cp /tmp/globals_geodb.rootso.org.dmp sogis-postgis-edit:/tmp
+docker exec -e PGHOST=/tmp -it sogis-postgis-edit psql --single-transaction -d edit -f /tmp/globals_geodb.rootso.org.dmp
+docker cp /tmp/globals_geodb.rootso.org.dmp sogis-postgis-oereb:/tmp
+docker exec -e PGHOST=/tmp -it sogis-postgis-oereb psql --single-transaction -d oereb -f /tmp/globals_geodb.rootso.org.dmp
+```
