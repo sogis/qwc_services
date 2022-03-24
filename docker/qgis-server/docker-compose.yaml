@@ -1,0 +1,134 @@
+version: '3'
+services:
+  edit-db:
+    container_name: sogis-postgis-edit
+    image: crunchydata/crunchy-postgres-gis:centos8-13.3-3.1-4.7.1
+    environment:
+      MODE: postgres
+      PG_DATABASE: edit
+      PG_LOCALE: en_US.UTF-8
+      PG_PRIMARY_PORT: 5432
+      PG_MODE: primary
+      PG_USER: admin
+      PG_PASSWORD: admin
+      PG_PRIMARY_USER: repl
+      PG_PRIMARY_PASSWORD: repl
+      PG_ROOT_PASSWORD: secret
+      MAX_CONNECTIONS: 250
+    ports:
+     - "54321:5432"
+    volumes:
+     - ./postgis/setup.sql:/pgconf/setup.sql
+     - sshd_edit:/sshd
+     - pgconf_edit:/pgconf
+     - pgdata_edit:/pgdata
+     - pgwal_edit:/pgwal
+     - recover_edit:/recover
+     - backrestrepo_edit:/backrestrepo
+    hostname: primary-edit
+    healthcheck:
+      test: ["CMD-SHELL", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 5
+  pub-db:
+    container_name: sogis-postgis-pub
+    image: crunchydata/crunchy-postgres-gis:centos8-13.3-3.1-4.7.1
+    environment:
+      MODE: postgres
+      PG_DATABASE: pub
+      PG_LOCALE: en_US.UTF-8
+      PG_PRIMARY_PORT: 5432
+      PG_MODE: primary
+      PG_USER: admin
+      PG_PASSWORD: admin
+      PG_PRIMARY_USER: repl
+      PG_PRIMARY_PASSWORD: repl
+      PG_ROOT_PASSWORD: secret
+    ports:
+     - "54322:5432"
+    volumes:
+     - ./postgis/setup.sql:/pgconf/setup.sql
+     - sshd_pub:/sshd
+     - pgconf_pub:/pgconf
+     - pgdata_pub:/pgdata
+     - pgwal_pub:/pgwal
+     - recover_pub:/recover
+     - backrestrepo_pub:/backrestrepo
+    hostname: primary-pub
+    healthcheck:
+      test: ["CMD-SHELL", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 5
+  oereb-db:
+    container_name: sogis-postgis-oereb
+    image: crunchydata/crunchy-postgres-gis:centos8-13.3-3.1-4.7.1
+    environment:
+      MODE: postgres
+      PG_DATABASE: oereb
+      PG_LOCALE: en_US.UTF-8
+      PG_PRIMARY_PORT: 5432
+      PG_MODE: primary
+      PG_USER: admin
+      PG_PASSWORD: admin
+      PG_PRIMARY_USER: repl
+      PG_PRIMARY_PASSWORD: repl
+      PG_ROOT_PASSWORD: secret
+    ports:
+     - "54323:5432"
+    volumes:
+     - ./postgis/setup.sql:/pgconf/setup.sql
+     - sshd_oereb:/sshd
+     - pgconf_oereb:/pgconf
+     - pgdata_oereb:/pgdata
+     - pgwal_oereb:/pgwal
+     - recover_oereb:/recover
+     - backrestrepo_oereb:/backrestrepo
+    hostname: primary-oereb
+    healthcheck:
+      test: ["CMD-SHELL", "/usr/pgsql-13/bin/pg_isready -h localhost -p 5432"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 5
+  qgis-server:
+    container_name: sogis-qgis-server
+    image: sogis/qgis-server
+    build:
+      context: ./qgis-server
+    environment:
+      QGIS_FCGI_MIN_PROCESSES: 1
+      QGIS_FCGI_MAX_PROCESSES: 2
+      LOG_LEVEL: 0
+    ports:
+     - "127.0.0.1:8001:80"
+    volumes:
+      - ./volumes/qgs-resources:/data:ro
+      - ./volumes/geodata:/geodata:ro
+      - ./qgis-server/pg_service.conf:/etc/postgresql-common/pg_service.conf
+    depends_on:
+            - edit-db
+            - pub-db
+            - oereb-db
+volumes:
+  sshd_edit:
+  pgconf_edit:
+  pgdata_edit:
+  pgwal_edit:
+  recover_edit:
+  backrestrepo_edit:
+  sshd_pub:
+  pgconf_pub:
+  pgdata_pub:
+  pgwal_pub:
+  recover_pub:
+  backrestrepo_pub:
+  sshd_oereb:
+  pgconf_oereb:
+  pgdata_oereb:
+  pgwal_oereb:
+  recover_oereb:
+  backrestrepo_oereb:
