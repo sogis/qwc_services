@@ -33,9 +33,9 @@ RUN unlink /var/log/nginx/access.log \
     && chmod -R 644 /etc/amplify-agent
 
 # Copy nginx stub_status config
-COPY conf.d/stub_status.conf /etc/nginx/conf.d
+ADD conf.d/stub_status.conf /etc/nginx/conf.d
 
-COPY entrypoint.sh /entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
 
 USER 1001
 
