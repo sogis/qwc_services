@@ -30,7 +30,7 @@ RUN unlink /var/log/nginx/access.log \
     && chown 1000820001 /var/log/nginx/*log \
     && chmod 644 /var/log/nginx/*log \
     && chown -R 1000820001 /etc/amplify-agent \
-    && chmod -R 644 /etc/amplify-agent
+    && chmod -R 755 /etc/amplify-agent
 
 # Copy nginx stub_status config
 COPY ./conf.d/stub_status.conf /etc/nginx/conf.d
