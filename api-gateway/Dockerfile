@@ -27,9 +27,9 @@ RUN unlink /var/log/nginx/access.log \
     && unlink /var/log/nginx/error.log \
     && touch /var/log/nginx/access.log \
     && touch /var/log/nginx/error.log \
-    && chown 1000820001 /var/log/nginx/*log \
+    && chown 101 /var/log/nginx/*log \
     && chmod 644 /var/log/nginx/*log \
-    && chown -R 1000820001 /etc/amplify-agent \
+    && chown -R 101 /etc/amplify-agent \
     && chmod -R 755 /etc/amplify-agent
 
 # Copy nginx stub_status config
@@ -37,6 +37,6 @@ COPY ./conf.d/stub_status.conf /etc/nginx/conf.d
 
 COPY ./entrypoint.sh /entrypoint.sh
 
-USER 1000820001
+USER 101
 
 ENTRYPOINT ["/entrypoint.sh"]
