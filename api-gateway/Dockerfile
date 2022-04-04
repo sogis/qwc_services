@@ -39,4 +39,4 @@ COPY ./entrypoint.sh /entrypoint.sh
 
 USER 1000820001
 
-ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
