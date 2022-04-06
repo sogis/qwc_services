@@ -23,3 +23,4 @@ RUN chown -R 101 /etc/filebeat /var/lib/filebeat
 
 USER 101
 
+ENTRYPOINT ["/entrypoint.sh"]
