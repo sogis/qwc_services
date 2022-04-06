@@ -12,31 +12,8 @@ ADD apidoc.html maintenance.html epsg.html /usr/share/nginx/html/
 USER root
 
 # Install the NGINX Amplify Agent
-RUN apt-get update \
-    && apt-get install -qqy curl python apt-transport-https apt-utils gnupg1 procps \
-    && echo 'deb https://packages.amplify.nginx.com/debian/ stretch amplify-agent' > /etc/apt/sources.list.d/nginx-amplify.list \
-    && curl -fs https://nginx.org/keys/nginx_signing.key | apt-key add - > /dev/null 2>&1 \
-    && apt-get update \
-    && apt-get install -qqy nginx-amplify-agent \
-    && apt-get purge -qqy curl apt-transport-https apt-utils gnupg1 \
-    && rm -rf /etc/apt/sources.list.d/nginx-amplify.list \
-    && rm -rf /var/lib/apt/lists/*
-
-# Keep the nginx logs inside the container
-RUN unlink /var/log/nginx/access.log \
-    && unlink /var/log/nginx/error.log \
-    && touch /var/log/nginx/access.log \
-    && touch /var/log/nginx/error.log \
-    && chown 101 /var/log/nginx/*log \
-    && chmod 644 /var/log/nginx/*log \
-    && chown -R 101 /etc/amplify-agent \
-    && chmod -R 755 /etc/amplify-agent
-
-# Copy nginx stub_status config
-COPY ./conf.d/stub_status.conf /etc/nginx/conf.d
-
-COPY ./entrypoint.sh /entrypoint.sh
+RUN curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-oss-7.15.1-amd64.deb \
+    && dpkg -i filebeat-oss-7.15.1-amd64.deb
 
 USER 101
 
-ENTRYPOINT ["/entrypoint.sh"]
