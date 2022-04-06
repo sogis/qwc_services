@@ -21,6 +21,8 @@ ADD filebeat.yml /etc/filebeat/filebeat.yml
 
 RUN chown -R 101 /etc/filebeat /var/lib/filebeat
 
+COPY ./entrypoint.sh /entrypoint.sh
+
 USER 101
 
 ENTRYPOINT ["/entrypoint.sh"]
