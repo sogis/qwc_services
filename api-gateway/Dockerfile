@@ -19,7 +19,7 @@ RUN curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-os
 
 ADD filebeat.yml /etc/filebeat/filebeat.yml
 
-RUN chmod -R 775 /etc/filebeat 
+RUN chown -R 101 /etc/filebeat
 
 USER 101
 
