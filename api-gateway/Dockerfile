@@ -13,7 +13,13 @@ USER root
 
 # Install the NGINX Amplify Agent
 RUN curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-oss-7.15.1-amd64.deb \
-    && dpkg -i filebeat-oss-7.15.1-amd64.deb
+    && dpkg -i filebeat-oss-7.15.1-amd64.deb \
+    && filebeat modules list \
+    && filebeat modules enable nginx
+
+ADD filebeat.yml /etc/filebeat/filebeat.yml
+
+RUN chmod -R 775 /etc/filebeat 
 
 USER 101
 
