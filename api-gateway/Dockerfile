@@ -25,4 +25,4 @@ COPY ./entrypoint.sh /entrypoint.sh
 
 USER 101
 
-ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
