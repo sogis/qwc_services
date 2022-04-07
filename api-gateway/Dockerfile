@@ -24,4 +24,5 @@ RUN chgrp -R 0 /etc/filebeat /var/lib/filebeat /var/log/filebeat && \
     chmod -R g=u /etc/filebeat /var/lib/filebeat /var/log/filebeat
 
 COPY ./entrypoint.sh /entrypoint.sh
+USER 1001
 #ENTRYPOINT ["/entrypoint.sh"]
