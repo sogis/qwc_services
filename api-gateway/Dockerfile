@@ -19,7 +19,7 @@ RUN curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-os
 
 ADD filebeat.yml /etc/filebeat/filebeat.yml
 
-RUN chown -R 101 /etc/filebeat /var/lib/filebeat
+RUN chown -R 101 /etc/filebeat /var/lib/filebeat /etc/init.d/filebeat
 
 COPY ./entrypoint.sh /entrypoint.sh
 
