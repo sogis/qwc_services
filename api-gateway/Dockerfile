@@ -15,6 +15,6 @@ USER root
 RUN unlink /var/log/nginx/access.log \
     && touch /var/log/nginx/access.log \
     && chown 101 /var/log/nginx/*log \
-    && chmod 755 /var/log/nginx/*log \
+    && chmod 755 /var/log/nginx/*log
 
 USER 101
