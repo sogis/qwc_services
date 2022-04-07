@@ -17,4 +17,4 @@ RUN chgrp -R 0 /etc/filebeat /var/lib/filebeat /var/log/filebeat && \
     chmod -R g=u /etc/filebeat /var/lib/filebeat /var/log/filebeat
 
 USER 1001
-CMD ["filebeat", "strict.perms", "false"]
+CMD ["filebeat", "--strict.perms=false"]
