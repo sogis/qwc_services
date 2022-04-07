@@ -5,7 +5,7 @@ USER root
 
 # Install the NGINX Amplify Agent
 RUN apt-get update \
-    && apt-get install curl
+    && apt-get install -y curl
 RUN curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-oss-7.15.1-amd64.deb \
     && dpkg -i filebeat-oss-7.15.1-amd64.deb \
     && filebeat modules list \
