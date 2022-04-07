@@ -8,3 +8,9 @@ EXPOSE 8081
 RUN sed -i.bak 's/^user/#user/' /etc/nginx/nginx.conf
 
 ADD apidoc.html maintenance.html epsg.html /usr/share/nginx/html/
+
+# Keep the nginx logs inside the container
+RUN unlink /var/log/nginx/access.log \
+    && touch /var/log/nginx/access.log \
+    && chown 101 /var/log/nginx/*log \
+    && chmod 755 /var/log/nginx/*log \

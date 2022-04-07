@@ -16,5 +16,5 @@ ADD filebeat.yml /etc/filebeat/filebeat.yml
 RUN chgrp -R 0 /etc/filebeat /var/lib/filebeat /var/log/filebeat && \
     chmod -R g=u /etc/filebeat /var/lib/filebeat /var/log/filebeat
 
-USER 1001
+USER 101
 CMD ["filebeat", "--strict.perms=false"]
