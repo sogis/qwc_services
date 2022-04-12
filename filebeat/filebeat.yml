@@ -148,7 +148,7 @@ setup.kibana:
 # ------------------------------ Logstash Output -------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["localhost:5044"]
+  hosts: ["http://logstash.apps.ocp.so.ch:5044"]
   loadbalance: true
   ssl.enabled: true
 
