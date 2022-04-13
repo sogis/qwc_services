@@ -150,7 +150,6 @@ output.logstash:
   # The Logstash hosts
   hosts: ["http://logstash.apps.ocp.so.ch:5044"]
   loadbalance: true
-  ssl.enabled: true
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
