@@ -148,7 +148,7 @@ setup.kibana:
 # ------------------------------ Logstash Output -------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["logstash.apps.ocp.so.ch:80"]
+  hosts: ["logstash.gdi.test.svc:8080"]
   # loadbalance: true
 
   # Optional SSL. By default is off.
