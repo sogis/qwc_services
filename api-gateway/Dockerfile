@@ -12,11 +12,9 @@ ADD apidoc.html maintenance.html epsg.html /usr/share/nginx/html/
 USER root
 
 # Keep the nginx logs inside the container
-RUN unlink /var/log/nginx/access.log  \
-    && unlink /var/log/nginx/error.log \
-    && touch /var/log/nginx/access.log \
-    && touch /var/log/nginx/error.log \
-    && chown 101 /var/log/nginx/*log \
-    && chmod 755 /var/log/nginx/*log
+RUN touch /var/log/nginxi-hard/access.log \
+    && touch /var/log/nginx-hard/error.log \
+    && chown 101 /var/log/nginx-hard/*log \
+    && chmod 755 /var/log/nginx-hard/*log
 
 USER 101
