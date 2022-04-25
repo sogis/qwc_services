@@ -148,8 +148,9 @@ setup.kibana:
 # ------------------------------ Logstash Output -------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["logstash.gdi-test.svc:8080"]
-  # loadbalance: true
+  hosts: ["ab4e5740-6e7a-4955-8762-5875a70f1b7d-ls.logit.io:19187"]
+  loadbalance: true
+  ssl.enabled: true
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
