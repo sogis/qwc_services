@@ -148,7 +148,7 @@ setup.kibana:
 # ------------------------------ Logstash Output -------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["ab4e5740-6e7a-4955-8762-5875a70f1b7d-ls.logit.io:19187"]
+  hosts: ${LOGSTASH_HOST}
   loadbalance: true
   ssl.enabled: true
 
