@@ -96,13 +96,17 @@ services:
       retries: 5
   qgis-server:
     container_name: sogis-qgis-server
-    image: sogis/qgis-server
-    build:
-      context: ./qgis-server
+    image: kartoza/qgis-server:2.18
+    #build:
+    #  context: ./qgis-server
     environment:
       QGIS_FCGI_MIN_PROCESSES: 1
       QGIS_FCGI_MAX_PROCESSES: 2
       LOG_LEVEL: 0
+      QGIS_PROJECT_FILE: ''
+      PGSERVICEFILE: /etc/postgresql-common/pg_service.conf
+      USERNAME: docker
+      PASS: docker
     ports:
      - "127.0.0.1:8001:80"
     volumes:
