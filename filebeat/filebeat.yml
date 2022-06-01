@@ -149,8 +149,8 @@ setup.kibana:
 output.logstash:
   # The Logstash hosts
   hosts: ${LOGSTASH_HOST}
-  #loadbalance: true
-  #ssl.enabled: true
+  loadbalance: ${LOADBALANCE}
+  ssl.enabled: ${SSL}
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
