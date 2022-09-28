@@ -8,7 +8,7 @@ EXPOSE 8081
 RUN sed -i.bak 's/^user/#user/' /etc/nginx/nginx.conf
 
 ADD apidoc.html maintenance.html epsg.html /usr/share/nginx/html/
-ADD icons/apple-touch-icon.png icons/favicon-16x16.png /usr/share/nginx/html/
+ADD icons/* /usr/share/nginx/html/
 
 USER root
 
