@@ -1,9 +1,10 @@
 <Error>
     <Code>RateLimitExceeded</Code>
     <Message>
-	    Rate Limit Exceeded. We recognized too many requests from your ip address in the last minute.
+	    Rate Limit Exceeded! 
+	    We recognized too many requests from your ip address in the last minute.
 	    To protect the service and for performance reasons, only a certain number of requests per minute is allowed.
-	    This is a web service. It is not necessary to collect the results for every property!
+	    This is a web service. Thus it is not necessary to collect the results for every property!
 	    Please contact the Amt für Geoinformation (phone +41 32 627 75 92, email: agi@bd.so.ch) if you have any further questions.
     </Message>
 </Error>
