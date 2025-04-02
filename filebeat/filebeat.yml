@@ -22,10 +22,10 @@ filebeat.inputs:
 - type: filestream
 
   # Unique ID among all inputs, an ID is required.
-  id: my-filestream-id
+  id: 100000000001
 
   # Change to true to enable this input configuration.
-  enabled: false
+  enabled: true
 
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
@@ -47,9 +47,12 @@ filebeat.inputs:
 
   # Optional additional fields. These fields can be freely picked
   # to add additional information to the crawled log files for filtering
-  #fields:
-  #  level: debug
-  #  review: 1
+  fields:
+    type: nginx-access
+    logstashApiKey: ${LOGSTASH_KEY}
+    fields_under_root: true
+    encoding: utf-8
+    exclude_files: [".gz"]
 
 # ============================== Filebeat modules ==============================
 
