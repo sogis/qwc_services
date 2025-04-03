@@ -22,10 +22,10 @@ filebeat.inputs:
 - type: filestream
 
   # Unique ID among all inputs, an ID is required.
-  id: 100000000001
+  id: my-filestream-id
 
   # Change to true to enable this input configuration.
-  enabled: true
+  enabled: false
 
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
@@ -47,8 +47,10 @@ filebeat.inputs:
 
   # Optional additional fields. These fields can be freely picked
   # to add additional information to the crawled log files for filtering
-  fields:
-    logstashApiKey: ${LOGSTASH_KEY}
+  #fields:
+  #  level: debug
+  #  review: 1
+  
 
 # ============================== Filebeat modules ==============================
 
@@ -168,6 +170,10 @@ processors:
   - add_cloud_metadata: ~
   - add_docker_metadata: ~
   - add_kubernetes_metadata: ~
+  - add_fields:
+      target: ''
+      fields:
+        logstashApiKey: ${LOGSTASH_KEY}
 
 # ================================== Logging ===================================
 
