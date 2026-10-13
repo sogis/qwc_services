@@ -1,5 +1,5 @@
 # Nginx Server
-FROM debian:11
+FROM debian:12
 
 USER root
 
