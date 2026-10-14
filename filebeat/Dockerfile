@@ -14,7 +14,8 @@ RUN curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-os
 ADD filebeat.yml /etc/filebeat/filebeat.yml
 
 RUN chgrp -R 0 /etc/filebeat /var/lib/filebeat /var/log/filebeat && \
-    chmod -R g=u /etc/filebeat /var/lib/filebeat /var/log/filebeat
+    chmod -R g=u /etc/filebeat /var/lib/filebeat /var/log/filebeat && \
+    chmod g-w /etc/filebeat/filebeat.yml
 
 USER 101
-CMD ["filebeat", "--strict.perms=false"]
+CMD ["filebeat", "-e", "--strict.perms=false", "-E", "seccomp.enabled=false"]
